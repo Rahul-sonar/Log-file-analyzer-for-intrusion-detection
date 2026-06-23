@@ -1,106 +1,49 @@
-# Log File Analyzer for Intrusion Detection
+# 🛡️ Log File Analyzer for Intrusion Detection
 
-## Overview
+A Python-based SOC monitoring tool that analyzes Linux authentication logs to identify brute-force attacks, suspicious login activity, and invalid-user enumeration attempts.
 
-This project is a Python-based SOC (Security Operations Center) log analysis tool that analyzes Linux authentication logs and detects suspicious activities such as brute-force attacks and invalid user enumeration attempts.
+## Key Features
 
-The tool helps security analysts identify potential threats by processing log files, extracting suspicious IP addresses, assigning risk levels, generating incident reports, and visualizing attack patterns.
-
----
-
-## Features
-
-- Parse Linux authentication logs
-- Detect failed login attempts
-- Extract suspicious IP addresses
-- Detect brute-force attacks
-- Detect invalid user enumeration attempts
-- Assign risk levels (LOW, MEDIUM, HIGH)
-- Generate incident reports
-- Export results to CSV
-- Create attack visualization graphs
-- Generate threat summary dashboard
-
----
+* Failed Login Detection
+* Brute Force Detection
+* Suspicious IP Identification
+* Risk Classification
+* Incident Report Generation
+* CSV Export
+* Attack Visualization
+* Threat Summary Dashboard
 
 ## Technologies Used
 
-- Python 3
-- Pandas
-- Matplotlib
-- Regular Expressions (Regex)
+* Python
+* Pandas
+* Matplotlib
+* Regular Expressions (Regex)
+* Linux Authentication Logs
 
----
+## Sample Use Case
 
-## Project Structure
+The tool analyzes authentication logs and automatically:
 
-```
-LogFileAnalyzer/
-│
-├── analyzer.py
-├── README.md
-│
-├── logs/
-│   └── auth.log
-│
-├── reports/
-│   ├── incident_report.txt
-│   ├── ip_report.csv
-│   └── attack_graph.png
-│
-└── screenshots/
-```
+1. Detects failed login attempts
+2. Extracts attacker IP addresses
+3. Assigns LOW/MEDIUM/HIGH risk levels
+4. Generates incident reports
+5. Creates attack visualizations
 
----
+## Project Screenshots
 
-## Installation
+<img width="1366" height="768" alt="01_auth_log" src="https://github.com/user-attachments/assets/a7e3b060-8652-424f-a987-fee2c02bae97" />
 
-Install required packages:
 
-```bash
-pip3 install pandas matplotlib
-```
+## Future Improvements
 
----
+* Real-time log monitoring
+* Email alerting
+* SIEM integration
+* Threat intelligence enrichment
+* Dashboard interface
 
-## Run the Project
-
-```bash
-python3 analyzer.py
-```
-
----
-
-## Sample Output
-
-```
-SOC ALERT REPORT
-
-IP: 192.168.1.10
-Attempts: 10
-Risk: HIGH
-
-IP: 192.168.1.20
-Attempts: 6
-Risk: MEDIUM
-
-IP: 192.168.1.30
-Attempts: 2
-Risk: LOW
-```
-
----
-
-## Threat Detection Capabilities
-
-- SSH Brute Force Detection
-- Failed Authentication Monitoring
-- Invalid User Detection
-- Risk Classification
-- Security Reporting
-
----
-
-## Author
+## Author 
 
 Rahul Sonar

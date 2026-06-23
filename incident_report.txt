@@ -1,0 +1,15 @@
+SOC INCIDENT REPORT
+==================
+
+IP: 192.168.1.10
+Attempts: 10
+Risk: HIGH
+
+IP: 192.168.1.20
+Attempts: 6
+Risk: MEDIUM
+
+IP: 192.168.1.30
+Attempts: 2
+Risk: LOW
+
